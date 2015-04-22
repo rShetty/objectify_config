@@ -1,8 +1,7 @@
 # ObjectifyConfig
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/objectify_config`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+ObjectifyConfig wraps your configuration file keys into a Object.
+The keys in the configuration files become callable methods.
 
 ## Installation
 
@@ -22,7 +21,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add this in your initializer file
+
+```ruby
+ObjectifyConfig.configuration_files('/path/to/*.yml')
+ObjectifyConfig.run
+```
 
 ## Development
 
