@@ -1,4 +1,4 @@
-# ObjectifyConfig
+# ObjectifyConfig   [![Build Status](https://travis-ci.org/rShetty/objectify_config.svg?branch=master)](https://travis-ci.org/rShetty/objectify_config)
 
 ObjectifyConfig wraps your configuration file keys into a Object.
 The keys in the configuration files become callable methods.
