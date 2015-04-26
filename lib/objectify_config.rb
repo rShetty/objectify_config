@@ -15,13 +15,11 @@ module ObjectifyConfig
         temp_class = Class.new do
 
           singleton_class.class_eval do
-
             Object.const_set("CONFIG_FILE", config_file)
 
             def method_missing(key)
               configuration_keys[key.to_sym]
             end
-
 
             def configuration_keys
               file_contents = YAML.load_file(CONFIG_FILE)
@@ -30,7 +28,6 @@ module ObjectifyConfig
                 result[h.to_sym] = k 
               end
             end
-
           end
         end
 
@@ -47,5 +44,13 @@ end
 class String 
   def camelize
     self.split('_').map {|w| w.capitalize}.join
+  end
+end
+
+class Hash
+  def method_missing(sym, *)
+    fetch(sym) do 
+      fetch(sym.to_s){super}
+    end
   end
 end

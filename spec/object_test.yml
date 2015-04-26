@@ -1,2 +1,21 @@
 value: 5
 new_value: 1
+
+abc:
+  yab: 2
+  blah: 3
+
+person: 
+  address: 
+    building_number: 23
+
+programming: 
+  functional:
+    pure:
+      dependent_types: 
+        idris: 'awesomeness'
+      non_dependent_types:
+        haskell: "rocks"
+    impure:
+      clojure: "cool"
+
