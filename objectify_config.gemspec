@@ -7,15 +7,14 @@ Gem::Specification.new do |spec|
   spec.name          = "objectify_config"
   spec.version       = ObjectifyConfig::VERSION
   spec.authors       = ["Rajeev N B"]
-  spec.email         = ["rajeevnb@thoughtworks.com"]
+  spec.email         = ["rajeevrvis@gmail.com"]
 
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
   end
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Objectify your yml configuration files with support for arbitrary level of nesting"
+  spec.homepage      = "https://github.com/rShetty/objectify_config"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
