@@ -2,9 +2,12 @@ require 'spec_helper.rb'
 
 describe 'ObjectifyConfig' do
 
-  it 'should fetch the new_value by sending message to it' do
+  before :all do
     ObjectifyConfig.configuration_files(File.join(File.dirname(__FILE__), "object_test.yml"))
     ObjectifyConfig.run
+  end
+
+  it 'should fetch the new_value by sending message to it' do
     expect(ObjectTestConfig.new_value).to eq(1)
   end
 
