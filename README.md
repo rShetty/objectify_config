@@ -3,6 +3,8 @@
 ObjectifyConfig wraps your configuration file keys into a Object.
 The keys in the configuration files become callable methods.
 
+### Note: Crazy metaprogramming alert, Read the code at your own risk
+
 ## Installation
 
 Add this line to your application's Gemfile:
